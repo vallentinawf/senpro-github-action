@@ -38,7 +38,7 @@ jobs:
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
-        scripts: |
+        script: |
           eval "$(ssh-agent -s)"
           ssh-add ~/.ssh/senpro-ssh-20
           echo "Cek folder project";
